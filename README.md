@@ -1,5 +1,5 @@
 
-# Packr CLI
+# 📦 Packr CLI
 
 Packr CLI is a tool to merge multiple **.LUA** files into a single file.
 
