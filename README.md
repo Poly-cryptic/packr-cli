@@ -7,6 +7,10 @@ Packr CLI is a tool to merge multiple **.LUA** files into a single file.
 
 Use the package manager [npm](https://www.npmjs.com/package/packr-cli) to install Packr.
 
+**OR**
+
+[**Install the C# version.**](https://github.com/TheGreatSageEqualToHeaven/Packr-CLI-CSharp)
+
 ```bash
 npm install packr-cli -g
 ```
