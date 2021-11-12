@@ -17,9 +17,9 @@ local _Packd_require = function(key)
             return _Packd[path.. ".lua"] or _Packd[path]
         end
     end
-    end
+end
 
-    local require = function(path)
+local require = function(path)
     if string.sub(path,1,2) == "./" then
         return _Packd[string.sub(path,3,#path).. ".lua"] or _Packd[string.sub(path,3,#path)]
     else
@@ -70,7 +70,7 @@ async function Packr(project,entry,minify) {
         Packed = Luamin.minify(Packed);
     }
 
-    Packed = "--[[\n    Packed by Packr\n]]--\n\n" + Packed;
+    Packed = "--[[\n   Packed by Packr CLI\n   https://www.npmjs.com/package/packr-cli\n]]--\n\n" + Packed;
 
     // Write
     Filesystem.writeFileSync("packd.output.lua",Packed);
